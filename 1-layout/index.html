@@ -21,7 +21,7 @@
             <div>
                 <button>Создать продукт</button>
             </div>
-            <div class="product-item active">
+            <div class="product-item product-item-active">
                 <h6 class="item-title">Loan Product General</h6>
                 <p class="item-date">22.12.2021</p>
             </div>
@@ -44,69 +44,44 @@
         <section class="product-description">
             <form>
                 <fieldset>
-                    <legend>Редактирование: Loan Product General</legend>
+                    <legend><b>Редактирование: Loan Product General</b></legend>
                     <div class="product-item-input">
-                        <label for="name">Product Name</label>
-                        <input 
-                        type="text" 
-                        id="name" 
-                        name="product_name" 
-                        type="text"
-                        placeholder="placeholder"
-                        required
-                        >
+                        <div class="product-item-input_item">
+                            <label for="name">Product Name</label>
+                            <input type="text" id="name" name="product_name" type="text" placeholder="placeholder" required>
+                        </div>
                     </div>
                     <div class="product-item-input">
                         <!-- min amount -->
-                        <label for="min_amount">Min Amount</label>
-                        <input 
-                        type="number" 
-                        id="min_amount" 
-                        name="min_amount" 
-                        placeholder="placeholder"
-                        required
-                        >
+                        <div class="product-item-input_item">
+                            <label for="min_amount">Min Amount</label>
+                            <input type="number" id="min_amount" name="min_amount" placeholder="placeholder" required>
+                        </div>
                         <!-- max amount -->
-                        <label for="max_amount">Max Amount</label>
-                        <input 
-                        type="number" 
-                        id="max_amount" 
-                        name="max_amount" 
-                        placeholder="placeholder"
-                        required
-                        >
+                        <div class="product-item-input_item">
+                            <label for="max_amount">Max Amount</label>
+                            <input type="number" id="max_amount" name="max_amount" placeholder="placeholder" required>
+                        </div>
                     </div>
                     <div class="product-item-input">
                         <!-- min term -->
-                        <label for="min_term">Min Term</label>
-                        <input 
-                        type="number" 
-                        id="min_term" 
-                        name="min_term" 
-                        placeholder="placeholder"
-                        required
-                        >
+                        <div class="product-item-input_item">
+                            <label for="min_term">Min Term</label>
+                            <input type="number" id="min_term" name="min_term" placeholder="placeholder" required>
+                        </div>
                         <!-- max term -->
-                        <label for="max_term">Max Term</label>
-                        <input 
-                        type="number"                         
-                        id="max_term" 
-                        name="max_term" 
-                        placeholder="placeholder"
-                        required
-                        >
+                        <div class="product-item-input_item">
+                            <label for="max_term">Max Term</label>
+                            <input type="number" id="max_term" name="max_term" placeholder="placeholder" required>
+                        </div>
                     </div>
                     <div class="product-item-input">
                         <!-- Annual Interest Rate -->
-                        <label for="min_term">Min Term</label>
-                        <input 
-                        type="text" 
-                        id="min_term" 
-                        name="min_term" 
-                        placeholder="placeholder"
-                        >
-                        
-                      
+                        <div class="product-item-input_item">
+                            <label for="interest">Annual Interest Rate</label>
+                            <input type="text" id="interest" name="interest" placeholder="placeholder">
+
+                        </div>
                     </div>
                     <button type="submit">Сохранить</button>
                 </fieldset>

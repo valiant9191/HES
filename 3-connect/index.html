@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Loan Products HES</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Super<b>Bank</b></h1>
+    </header>
+    <div class="product">
+
+
+        <!-- List of items:loan products -->
+        <section class="product-list">
+            <div>
+                <button>Создать продукт</button>
+            </div>
+            <div class="product-item product-item-active">
+                <h6 class="item-title">Loan Product General</h6>
+                <p class="item-date">22.12.2021</p>
+            </div>
+            <div class="product-item">
+                <h6 class="item-title">Loan Product 3000</h6>
+                <p class="item-date">22.12.2021</p>
+            </div>
+            <div class="product-item">
+                <h6 class="item-title">Loan Product 1000</h6>
+                <p class="item-date">22.12.2021</p>
+            </div>
+            <div class="product-item">
+                <h6 class="item-title">Loan Product для своих</h6>
+                <p class="item-date">22.12.2021</p>
+            </div>
+
+        </section>
+
+        <!-- Description of loan products -->
+        <section class="product-description">
+            <form>
+                <fieldset>
+                    <legend><b>Редактирование: Loan Product General</b></legend>
+                    <div class="product-item-input">
+                        <div class="product-item-input_item">
+                            <label for="name">Product Name</label>
+                            <input type="text" id="name" name="product_name" type="text" placeholder="placeholder" required>
+                        </div>
+                    </div>
+                    <div class="product-item-input">
+                        <!-- min amount -->
+                        <div class="product-item-input_item">
+                            <label for="min_amount">Min Amount</label>
+                            <input type="number" id="min_amount" name="min_amount" placeholder="placeholder" required>
+                        </div>
+                        <!-- max amount -->
+                        <div class="product-item-input_item">
+                            <label for="max_amount">Max Amount</label>
+                            <input type="number" id="max_amount" name="max_amount" placeholder="placeholder" required>
+                        </div>
+                    </div>
+                    <div class="product-item-input">
+                        <!-- min term -->
+                        <div class="product-item-input_item">
+                            <label for="min_term">Min Term</label>
+                            <input type="number" id="min_term" name="min_term" placeholder="placeholder" required>
+                        </div>
+                        <!-- max term -->
+                        <div class="product-item-input_item">
+                            <label for="max_term">Max Term</label>
+                            <input type="number" id="max_term" name="max_term" placeholder="placeholder" required>
+                        </div>
+                    </div>
+                    <div class="product-item-input">
+                        <!-- Annual Interest Rate -->
+                        <div class="product-item-input_item">
+                            <label for="interest">Annual Interest Rate</label>
+                            <input type="text" id="interest" name="interest" placeholder="placeholder">
+
+                        </div>
+                    </div>
+                    <button type="submit">Сохранить</button>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+
+    <script type="module" src="script.js" ></script>
+</body>
+
+</html>

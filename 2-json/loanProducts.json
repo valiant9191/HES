@@ -1,0 +1,65 @@
+[{
+    "Loan-name":"LightStream",
+    "Amount":{
+        "min-amount":"5000",
+        "max-amount":"100000"
+        },
+        "Term":{
+            "min-term":"2",
+            "max-term":"7"
+            },
+    "AI-rate":"10.99"
+    
+},
+{
+    "Loan-name":"SoFi",
+    "Amount":{
+        "min-amount":"5000",
+        "max-amount":"100000"
+        },
+        "Term":{
+            "min-term":"2",
+            "max-term":"7"
+            },
+    "AI-rate":"8.99"
+    
+},
+{
+    "Loan-name":"Upstart",
+    "Amount":{
+        "min-amount":"1000",
+        "max-amount":"50000"
+        },
+        "Term":{
+            "min-term":"3",
+            "max-term":"5"
+            },
+    "AI-rate":"9.81"
+    
+},
+{
+    "Loan-name":"Payoff",
+    "Amount":{
+        "min-amount":"5000",
+        "max-amount":"40000"
+        },
+        "Term":{
+            "min-term":"2",
+            "max-term":"5"
+            },
+    "AI-rate":"11.99"
+    
+},
+{
+    "Loan-name":"Universal Credit",
+    "Amount":{
+        "min-amount":"1000",
+        "max-amount":"50000"
+        },
+        "Term":{
+            "min-term":"3",
+            "max-term":"5"
+            },
+    "AI-rate":"11.93"
+    
+}]

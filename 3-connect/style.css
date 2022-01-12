@@ -109,7 +109,7 @@ body{
 .product-description{
     width: 100%;
     height:100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 21px 22px;
     overflow-y: auto;

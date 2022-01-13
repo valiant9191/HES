@@ -1,7 +1,6 @@
-import data from "./loanProducts.json" assert { type: "json" };
+import data from  "./loanProducts.json"  assert {type:"json"};
 
 const products = [];
-let productsCheck = false;
 let activeElementList = "";
 let activeElementChangeFor = "";
 
@@ -9,20 +8,17 @@ let activeElementChangeFor = "";
 const loanList = document.getElementById("product-item");
 const buttonList = document.getElementById("btn-create-product");
 
-// 1get data from json
+// get data from json
 const copyData = new Promise((res, rej) => {
   res(JSON.parse(JSON.stringify(data)));
 })
   .then(
     (data) => data.forEach((el) => products.push(el)),
-    (productsCheck = true)
   )
   .then((data) => insertData(products))
-  // .then(()=>products.push(data))
-  // .then(dt=>validateStore())
   .catch((e) => console.log(e));
 
-// 2 insert data from json function to html
+// insert data from json function to html
 function insertData(data) {
   let productName = document.getElementById("product-item");
   for (let i = 0; i < data.length; i++) {
@@ -39,7 +35,7 @@ function insertData(data) {
   validateProducts();
 }
 
-// 3 validate difference between el inside html and data to clear old el products or delete
+// validate difference between el inside html and data to clear old el products or delete
 function validateProducts() {
   const store = Array.from(document.querySelectorAll(".product-item")).map(
     (el) => el.id
@@ -91,6 +87,7 @@ function listenForClickList(e) {
   }
 
   activeElementList = element.closest(".product-item");
+
   activeElementList.className += " product-item-active";
 
   activeElementChangeFor=activeElementList.id
@@ -146,7 +143,7 @@ function insertProductInfo(el) {
 
 // listener for form 
 const sectForm=document.getElementById('description');
-const buttonDescriptionSubmit=sectForm.getElementsByTagName('button');
+
 sectForm.addEventListener('submit',(e)=>{
     e.preventDefault();
     formData()
